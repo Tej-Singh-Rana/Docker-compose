@@ -4,7 +4,7 @@ metadata:
      name: deploy
      labels:
         app: mydeploy1
-        shrawan: mydeploy2
+        tier: mydeploy2
 spec:
     template:
         metadata:
@@ -13,7 +13,7 @@ spec:
               app: my-app1
         spec:
             containers:
-            - image: shrawan84/pycode:v1
+            - image: arch1250/arch1250:v1
               name: coder
               imagePullPolicy: Always
     replicas: 1
@@ -32,4 +32,4 @@ spec:
       protocol: TCP
       targetPort: 80
     selector:
-app: my-app1
+        app: my-app1
