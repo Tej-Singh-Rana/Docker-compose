@@ -10,5 +10,5 @@ time.sleep(2)
 
 for i in range(1,5):
      print(i ,"is good number.")
-     time.sleep(1)
-
+     time.sleep(2)
+     print("####################")
