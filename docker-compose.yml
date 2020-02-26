@@ -1,0 +1,6 @@
+version: "3.5"
+services:
+    privateimage:
+          image: arch1250:v1
+          build: .
+          hostname: jenkins 
