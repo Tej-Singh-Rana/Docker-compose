@@ -1,3 +1,11 @@
+#docker-compose file for jenkins test
+#commands used in jenkins to perform job.
+#docker-compose down
+#sleep 2
+#docker-compose up --build -d
+#sleep 3
+#docker-compose ps
+
 version: "3.5"
 services:
     privateimage:
