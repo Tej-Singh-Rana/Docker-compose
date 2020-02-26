@@ -1,6 +1,11 @@
-FROM docker.io/centos/python-36-centos7
-WORKDIR /
-ADD jenkins.py .
-CMD ["python","/jenkins.py"]
+# when windows support image pulling in linux machine --> no supported platform found in manifest list.
+FROM docker.io/python
 
+WORKDIR /
+
+ADD jenkins.py .
+RUN chmod +x /jenkins.py
+CMD ["jenkins.py"]
+
+ENTRYPOINT ["python3"]
 
